@@ -32,19 +32,12 @@ namespace TomatoTimer
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.bSettings = new System.Windows.Forms.Button();
             this.bStart = new System.Windows.Forms.Button();
             this.bPause = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tBRound = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // bSettings
-            // 
-            resources.ApplyResources(this.bSettings, "bSettings");
-            this.bSettings.Name = "bSettings";
-            this.bSettings.UseVisualStyleBackColor = true;
             // 
             // bStart
             // 
@@ -92,11 +85,11 @@ namespace TomatoTimer
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.bPause);
             this.Controls.Add(this.bStart);
-            this.Controls.Add(this.bSettings);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,7 +98,6 @@ namespace TomatoTimer
         #endregion
 
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button bSettings;
         private System.Windows.Forms.Button bStart;
         private System.Windows.Forms.Button bPause;
         private System.Windows.Forms.TextBox textBox1;

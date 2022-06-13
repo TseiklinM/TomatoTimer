@@ -16,5 +16,11 @@ namespace TomatoTimer
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Settings Fu1 = new Settings();
+            Fu1.ShowDialog();
+        }
     }
 }

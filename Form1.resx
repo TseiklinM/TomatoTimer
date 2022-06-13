@@ -120,64 +120,11 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bSettings.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAABSBJREFUSEutlQ1MU1cUx29LaS1opWCLH8TOUHBxAUSwUJwY52aQDIqYTaeiEqsI
-        RY1iRBk6kQQJ6BTF0ZAwYRMdlCkUi2UUjUNH3OY2halA+VwZH1rY3LTo8NydR3FOraNL/CUnee+c/7vv
-        3K9zyCvAwd/fXxoWFrZIJpPNYN6t7qewo6OjlycmJiYFBAQ4jfrsYvr06cK9H+0tu910+3FPTw81mUyP
-        T548ec7b23vSqIQQNze313t7e4fums1wIDOzAl08a2RMOKtWrcozdZvo4G+D0NfXByUlJfciIyOrHR0d
-        3xjVjCDOPnjwcovRCIbaWggMDNyKvhemaQOXoqKiLjMmZrFYoKCg4Dr6lqB5oHEYwRMcOBzO3IgIxRld
-        VdUjo7H1UWho6EbGbw3bxtnZ2ddgMMCdO/10YMAMR44cOc+4rdEXYaNNQ5LP6XT32ts7hnHTtqHvmUz+
-        BWvOnDmq6mo9bWlpph2dHXDjxvWh+fPnJUokknG46fKIiIgU1Dla5U+ZKBaL47Ra7UBnZ9djhWLpHvS9
-        IEK465Xrz1799irUGGrgvP48/PDjNSj7UgPqfPUtnU4HUVFRL53ReBcXl7XlFRX9bW3tsHLlyiz0ca0h
-        K3w+f1qppnQgefcuWnuhhuLPoPaCgZaUfkErK7Vw6NChYVdX13Uofeky4xI7L9eUlXUbW1th7bp1nzBT
-        H41xVSpVfn9/P6SmptJy7Rkal7AJCj4toKmpH9J9+/aBj49PEerEVvnLwUT5ilOnT3c0t7TApoSEzwUC
-        gSvel7zyinI4daoYMjMzIUGlgh07d94LD1/ys5+fX6VQKEzGbyVorJFRxoDn4MALO3GisLmpqZkePpzT
-        mZt7DOa9Kafp6fth9erVjXiPdqFuEZo3GnPBnszUbrhIZKlGc//mzVuQtn8/xCfEQ2xs7PcYC0JjBrQr
-        W5uIRKLJeMYvKzco6dGjR2lDQyMcy80dSoqLPBu7WJiEEnsupW2w1swoLCz8KTl5Jw2WB9GQEDlVq/Mf
-        dTbm0PvtcdD1mWBYMon4j8r/Hzj4LI1GY9y8ZTMEhwRRuTyYZmVlDb4XOt7QU82Ch1cI/PkVocV7yKUZ
-        YuKOn9i9TCwvLy9ZZWVl94YNSgiWy8DH1weOHz/+YMqUKVukk0mCdjcZ/LWUgOUm/qSBQN81t4G0NfyD
-        EsnYG8zy9fV9S6/X341ZE0ODgudSqdQT8vLy/po5c2YaxoVoArSFi3zJiaYyMvywjU0fdERDVxmLpn1A
-        it3d/6MeYcNQYAH7Y/mK90EWFEg9PKYxGwshISFqjDPL8ASmdnlsiSBVPXpCHzSLYKhjMe29xKZZa0mF
-        1HUkiWdgL1iwYEVdXZ1FERUJgbIAELuLAdecqSlnMP4a2vNrzBY6kSXF20ivSUvAXD8BLG0y6Ktjw7GN
-        pMZDQFxHdYSFGSrwtHRv3769IScnZ1gkFkF6ejqNj4+vw/gsNCZjW/An8smyoh3E1K0j1HyZRy1GL7hb
-        z6YFW8mVqROI24goPz//Gzzvsfjsp1QqDWq1GrCmNGKfkKFvrHM+zolL3s1TkTbmJ/0XHcDS4kbNehYN
-        8CQKRiDAmvIdbu4yfHbGWZzLzs5u5fF4C/HdVqm2BY/nQN75WElu/4LL9Xs9gaoDrCb0ezJB7uzZs5Ow
-        WfdlZGTUp6SkNDs5OTGt75kSbQdcDoeEbgsnX+9aSi4688jb6PsnQREWrRipVMoUrrlo9jb+52E6INOT
-        p1qfCfkbtCAe8Z0QFMcAAAAASUVORK5CYII=
-</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bSettings.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="bSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="bSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 34</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;bSettings.Name" xml:space="preserve">
-    <value>bSettings</value>
-  </data>
-  <data name="&gt;&gt;bSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bSettings.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bSettings.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="bStart.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bStart.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
@@ -187,6 +134,7 @@
   <data name="bStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 37</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bStart.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -275,7 +223,7 @@
     <value>50, 163</value>
   </data>
   <data name="tBRound.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 15</value>
+    <value>34, 19</value>
   </data>
   <data name="tBRound.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -308,7 +256,7 @@
     <value>9, 163</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 15</value>
+    <value>55, 18</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
