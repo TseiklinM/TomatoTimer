@@ -31,13 +31,15 @@ namespace TomatoTimer
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.dataGV_ListInterval = new System.Windows.Forms.DataGridView();
+            this.NameInterval = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TimeInterval = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tb_NamInter = new System.Windows.Forms.TextBox();
             this.numUD_TimInter = new System.Windows.Forms.NumericUpDown();
             this.btn_Add = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_ClearGrid = new System.Windows.Forms.Button();
+            this.btn_CrTim = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_ListInterval)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_TimInter)).BeginInit();
             this.SuspendLayout();
@@ -46,15 +48,30 @@ namespace TomatoTimer
             // 
             this.dataGV_ListInterval.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGV_ListInterval.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2});
-            this.dataGV_ListInterval.Enabled = false;
+            this.NameInterval,
+            this.TimeInterval});
             this.dataGV_ListInterval.Location = new System.Drawing.Point(12, 79);
             this.dataGV_ListInterval.Name = "dataGV_ListInterval";
             this.dataGV_ListInterval.RowHeadersWidth = 51;
             this.dataGV_ListInterval.RowTemplate.Height = 24;
-            this.dataGV_ListInterval.Size = new System.Drawing.Size(324, 278);
+            this.dataGV_ListInterval.Size = new System.Drawing.Size(324, 239);
             this.dataGV_ListInterval.TabIndex = 0;
+            // 
+            // NameInterval
+            // 
+            this.NameInterval.HeaderText = "Название";
+            this.NameInterval.MinimumWidth = 6;
+            this.NameInterval.Name = "NameInterval";
+            this.NameInterval.ReadOnly = true;
+            this.NameInterval.Width = 120;
+            // 
+            // TimeInterval
+            // 
+            this.TimeInterval.HeaderText = "Время(мин.)";
+            this.TimeInterval.MinimumWidth = 6;
+            this.TimeInterval.Name = "TimeInterval";
+            this.TimeInterval.ReadOnly = true;
+            this.TimeInterval.Width = 90;
             // 
             // tb_NamInter
             // 
@@ -80,6 +97,7 @@ namespace TomatoTimer
             this.numUD_TimInter.Name = "numUD_TimInter";
             this.numUD_TimInter.Size = new System.Drawing.Size(64, 22);
             this.numUD_TimInter.TabIndex = 2;
+            this.numUD_TimInter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numUD_TimInter.Value = new decimal(new int[] {
             3,
             0,
@@ -115,25 +133,35 @@ namespace TomatoTimer
             this.label2.TabIndex = 5;
             this.label2.Text = "Время";
             // 
-            // Column1
+            // btn_ClearGrid
             // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
+            this.btn_ClearGrid.Enabled = false;
+            this.btn_ClearGrid.Location = new System.Drawing.Point(342, 79);
+            this.btn_ClearGrid.Name = "btn_ClearGrid";
+            this.btn_ClearGrid.Size = new System.Drawing.Size(75, 23);
+            this.btn_ClearGrid.TabIndex = 6;
+            this.btn_ClearGrid.Text = "Clear";
+            this.btn_ClearGrid.UseVisualStyleBackColor = true;
+            this.btn_ClearGrid.Click += new System.EventHandler(this.btn_ClearGrid_Click);
             // 
-            // Column2
+            // btn_CrTim
             // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
+            this.btn_CrTim.Enabled = false;
+            this.btn_CrTim.Location = new System.Drawing.Point(13, 334);
+            this.btn_CrTim.Name = "btn_CrTim";
+            this.btn_CrTim.Size = new System.Drawing.Size(323, 23);
+            this.btn_CrTim.TabIndex = 7;
+            this.btn_CrTim.Text = "Create Timer";
+            this.btn_CrTim.UseVisualStyleBackColor = true;
+            this.btn_CrTim.Click += new System.EventHandler(this.btn_CrTim_Click);
             // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(428, 369);
+            this.Controls.Add(this.btn_CrTim);
+            this.Controls.Add(this.btn_ClearGrid);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Add);
@@ -165,7 +193,9 @@ namespace TomatoTimer
         private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameInterval;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TimeInterval;
+        private System.Windows.Forms.Button btn_ClearGrid;
+        private System.Windows.Forms.Button btn_CrTim;
     }
 }

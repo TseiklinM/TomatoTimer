@@ -129,7 +129,7 @@
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="bStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 63</value>
+    <value>229, 13</value>
   </data>
   <data name="bStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 37</value>
@@ -160,7 +160,7 @@
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="bPause.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 106</value>
+    <value>229, 73</value>
   </data>
   <data name="bPause.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 34</value>
@@ -183,53 +183,53 @@
   <data name="&gt;&gt;bPause.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="tb_TimeRound.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 63</value>
+  <data name="tb_TimeRound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 13</value>
   </data>
-  <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
+  <data name="tb_TimeRound.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 77</value>
+  <data name="tb_TimeRound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 94</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="tb_TimeRound.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="textBox1.Text" xml:space="preserve">
+  <data name="tb_TimeRound.Text" xml:space="preserve">
     <value>00:00</value>
   </data>
-  <data name="textBox1.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+  <data name="tb_TimeRound.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;tb_TimeRound.Name" xml:space="preserve">
+    <value>tb_TimeRound</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;tb_TimeRound.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tb_TimeRound.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tb_TimeRound.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="tBRound.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="tBRound.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 163</value>
+    <value>12, 113</value>
   </data>
   <data name="tBRound.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 19</value>
+    <value>201, 19</value>
   </data>
   <data name="tBRound.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="tBRound.Text" xml:space="preserve">
-    <value>1</value>
+    <value>------</value>
   </data>
   <data name="tBRound.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
@@ -246,34 +246,28 @@
   <data name="&gt;&gt;tBRound.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="btn_NewTim.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 113</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  <data name="btn_NewTim.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 38</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 163</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 18</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_NewTim.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Раунд</value>
+  <data name="btn_NewTim.Text" xml:space="preserve">
+    <value>New Timer</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;btn_NewTim.Name" xml:space="preserve">
+    <value>btn_NewTim</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btn_NewTim.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_NewTim.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_NewTim.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

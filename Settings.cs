@@ -12,15 +12,13 @@ namespace TomatoTimer
 {
     public partial class Settings : Form
     {
-        DataTable Mytab;
+        public delegate void getMyList(List<Interval> Tl);
+        public getMyList getListInter;
+        List<Interval> Tl ;
         public Settings()
         {
             InitializeComponent();
-            
-            Mytab = new DataTable();
-            Mytab.Columns.Add(new DataColumn("Название", Type.GetType("System.String")));
-            Mytab.Columns.Add(new DataColumn("Время", Type.GetType("System.String")));
-            
+            Tl = new List<Interval>();
         }
 
         private void tb_NamInter_TextChanged(object sender, EventArgs e)
@@ -31,15 +29,33 @@ namespace TomatoTimer
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
+            if (dataGV_ListInterval.Rows.Count > 1) { btn_CrTim.Enabled = true; }
+            else btn_CrTim.Enabled = false;
+            if (!btn_ClearGrid.Enabled) { btn_ClearGrid.Enabled = true; }
             dataGV_ListInterval.Rows.Add(tb_NamInter.Text,(int)numUD_TimInter.Value);
+            Tl.Add(new Interval(tb_NamInter.Text, (int)numUD_TimInter.Value));
+            tb_NamInter.Text = "";
+            tb_NamInter.Focus();
         }
 
         private void Settings_Load(object sender, EventArgs e)
         {
-            tb_NamInter.Text = "";
-            tb_NamInter.Focus();
-            //dataGV_ListInterval = new DataGridView();
-            //dataGV_ListInterval.DataSource =new DataSet();
+           
+            
+        }
+
+        private void btn_ClearGrid_Click(object sender, EventArgs e)
+        {
+            btn_ClearGrid.Enabled = false;
+            btn_CrTim.Enabled = false;
+            dataGV_ListInterval.Rows.Clear();
+            Tl.Clear();
+        }
+
+        private void btn_CrTim_Click(object sender, EventArgs e)
+        {
+            getListInter?.Invoke(Tl);
+            Close();
         }
     }
 }
