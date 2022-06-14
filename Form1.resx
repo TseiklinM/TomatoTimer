@@ -173,7 +173,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bSettings.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="bStart.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -182,7 +182,7 @@
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="bStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 63</value>
+    <value>279, 23</value>
   </data>
   <data name="bStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 37</value>
@@ -203,7 +203,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bStart.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="bPause.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -211,8 +211,11 @@
   <data name="bPause.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
+  <data name="bPause.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="bPause.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 106</value>
+    <value>279, 66</value>
   </data>
   <data name="bPause.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 34</value>
@@ -233,19 +236,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bPause.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 48pt</value>
+    <value>Microsoft Sans Serif, 57.75pt</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 63</value>
+    <value>65, 23</value>
   </data>
   <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 77</value>
+    <value>199, 88</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -266,13 +269,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="tBRound.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="tBRound.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 163</value>
+    <value>53, 138</value>
   </data>
   <data name="tBRound.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 15</value>
@@ -296,7 +299,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tBRound.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -305,7 +308,7 @@
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 163</value>
+    <value>12, 138</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 15</value>
@@ -326,6 +329,105 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bResetInterval.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="bResetInterval.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="bResetInterval.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bResetInterval.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 117</value>
+  </data>
+  <data name="bResetInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 36</value>
+  </data>
+  <data name="bResetInterval.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="bResetInterval.Text" xml:space="preserve">
+    <value>Сброс интервала</value>
+  </data>
+  <data name="&gt;&gt;bResetInterval.Name" xml:space="preserve">
+    <value>bResetInterval</value>
+  </data>
+  <data name="&gt;&gt;bResetInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bResetInterval.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bResetInterval.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bResetTimer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="bResetTimer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="bResetTimer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bResetTimer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 117</value>
+  </data>
+  <data name="bResetTimer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 36</value>
+  </data>
+  <data name="bResetTimer.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="bResetTimer.Text" xml:space="preserve">
+    <value>Сброс таймера</value>
+  </data>
+  <data name="&gt;&gt;bResetTimer.Name" xml:space="preserve">
+    <value>bResetTimer</value>
+  </data>
+  <data name="&gt;&gt;bResetTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bResetTimer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bResetTimer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bNewTimer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="bNewTimer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="bNewTimer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bNewTimer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 117</value>
+  </data>
+  <data name="bNewTimer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 36</value>
+  </data>
+  <data name="bNewTimer.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="bNewTimer.Text" xml:space="preserve">
+    <value>Новый таймер</value>
+  </data>
+  <data name="&gt;&gt;bNewTimer.Name" xml:space="preserve">
+    <value>bNewTimer</value>
+  </data>
+  <data name="&gt;&gt;bNewTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bNewTimer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bNewTimer.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -338,7 +440,7 @@
     <value>None</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>347, 194</value>
+    <value>397, 169</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

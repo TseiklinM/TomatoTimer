@@ -38,6 +38,9 @@ namespace TomatoTimer
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tBRound = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.bResetInterval = new System.Windows.Forms.Button();
+            this.bResetTimer = new System.Windows.Forms.Button();
+            this.bNewTimer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bSettings
@@ -82,11 +85,35 @@ namespace TomatoTimer
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Name = "label1";
             // 
+            // bResetInterval
+            // 
+            resources.ApplyResources(this.bResetInterval, "bResetInterval");
+            this.bResetInterval.ForeColor = System.Drawing.SystemColors.Window;
+            this.bResetInterval.Name = "bResetInterval";
+            this.bResetInterval.UseVisualStyleBackColor = true;
+            // 
+            // bResetTimer
+            // 
+            resources.ApplyResources(this.bResetTimer, "bResetTimer");
+            this.bResetTimer.ForeColor = System.Drawing.SystemColors.Window;
+            this.bResetTimer.Name = "bResetTimer";
+            this.bResetTimer.UseVisualStyleBackColor = true;
+            // 
+            // bNewTimer
+            // 
+            resources.ApplyResources(this.bNewTimer, "bNewTimer");
+            this.bNewTimer.ForeColor = System.Drawing.SystemColors.Window;
+            this.bNewTimer.Name = "bNewTimer";
+            this.bNewTimer.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCoral;
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.bNewTimer);
+            this.Controls.Add(this.bResetTimer);
+            this.Controls.Add(this.bResetInterval);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tBRound);
             this.Controls.Add(this.textBox1);
@@ -97,6 +124,7 @@ namespace TomatoTimer
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,6 +139,9 @@ namespace TomatoTimer
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox tBRound;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bResetInterval;
+        private System.Windows.Forms.Button bResetTimer;
+        private System.Windows.Forms.Button bNewTimer;
     }
 }
 
