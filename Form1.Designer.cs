@@ -39,6 +39,11 @@ namespace TomatoTimer
             this.btn_NewTim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // bStart
             // 
             resources.ApplyResources(this.bStart, "bStart");

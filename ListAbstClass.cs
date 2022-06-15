@@ -22,6 +22,8 @@ namespace TomatoTimer
     {
         public delegate void yourTime(int min, int sec);
         public yourTime GetYourTime;
+        public delegate void yourInfo(string str);
+        public yourInfo TimeNow;
         //TimerCallback myCallback;
         Timer myTimer;
         int minute;
@@ -58,7 +60,6 @@ namespace TomatoTimer
         {
             if (!FlagStop) 
             {
-            //Thread.Sleep(1000);
                 second--;
                 if (second == 0)
                 {
@@ -73,8 +74,10 @@ namespace TomatoTimer
                     }
 
                 }
-                
-                
+                //string str = (minute < 10) ? "0" + minute : minute.ToString();
+                //str += ":";
+                //str += (second < 10) ? "0" + second : second.ToString();
+                //TimeNow?.Invoke(str);
             }
             GetYourTime?.Invoke(minute, second);
             if (FlagStop) { myTimer.Stop(); }
@@ -89,7 +92,7 @@ namespace TomatoTimer
         public getMyInfo getMyNum;
         
         //MyTimer timer;
-        int numActivInt;
+        public int numActivInt { get; private set; }
         List<Interval> listIntervalTimer;
         public TomTimer(List<Interval> intertime) 
         {
@@ -131,7 +134,7 @@ namespace TomatoTimer
                     }
                     getMyNum?.Invoke(listIntervalTimer[numActivInt].time);
                 }
-                else 
+                else
                 {
                     string str = (min < 10) ? "0" + min : min.ToString();
                     str += ":";
@@ -139,10 +142,11 @@ namespace TomatoTimer
                     getMyTime?.Invoke(str);
                 }
             }
-            else 
+            else
             {
-                string str = (min < 10) ? "0" + min : min.ToString() + ":";
-                str+=(sec<10)?"0"+sec:sec.ToString();
+                string str = (min < 10) ? "0" + min : min.ToString();
+                str += ":";
+                str += (sec < 10) ? "0" + sec : sec.ToString();
                 getMyTime?.Invoke(str);
             }
         }

@@ -12,8 +12,10 @@ namespace TomatoTimer
 {
     public partial class Form1 : Form
     {
-        MyTimer timer;
+        //MyTimer timer;
         TomTimer MyTimer;
+        int minute;
+        int second;
         public Form1()
         {
             InitializeComponent();
@@ -31,12 +33,19 @@ namespace TomatoTimer
             }
             else 
             {
-                timer = new MyTimer();
-                timer.GetYourTime += MyTimer.ShowRealTimInter;
-                MyTimer.getMyNum += timer.StartMyTim;
+                //timer = new MyTimer();
+                //timer.GetYourTime += MyTimer.ShowRealTimInter;
+                MyTimer.getMyNum += Fu1;
+                //timer.TimeNow += ShowYuerTime;
                 MyTimer.getMyName += ShowYuerName;
                 MyTimer.getMyTime += ShowYuerTime;
             }
+        }
+        void Fu1(object num) 
+        {
+            minute = (int)num - 1;
+            second = 60;
+            if (MyTimer.numActivInt != 0) { timer1.Enabled = true; }
         }
         void ShowYuerName(object str) { tBRound.Text = str.ToString(); }
         void ShowYuerTime(object str) { tb_TimeRound.Text = str.ToString(); }
@@ -50,12 +59,32 @@ namespace TomatoTimer
             //tBRound.Text = MyTimer.GetActivInterval().Name;
             //MyTimer.numUp();
             MyTimer.StartTomTimer();
+            timer1.Enabled = true;
         }
 
         private void btn_NewTim_Click(object sender, EventArgs e)
         {
             MyTimer = null;
             Form1_Load(sender, e);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            second--;
+            if (second == 0)
+            {
+                if (minute > 0)
+                {
+                    minute--;
+                    second = 60;
+                }
+                else if (minute == 0)
+                {
+                    timer1.Enabled=false;
+                }
+
+            }
+            MyTimer.ShowRealTimInter(minute, second);
         }
     }
 }
