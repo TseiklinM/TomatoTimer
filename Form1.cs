@@ -46,6 +46,7 @@ namespace TomatoTimer
                 MyTimer.getMyNum += setTime;
                 MyTimer.getMyName += ShowYuerName;
                 MyTimer.getMyTime += ShowYuerTime;
+                btn_RestartTimer.Enabled = btn_RestartInter.Enabled = false;
             }
         }
         //получение времени
@@ -75,13 +76,16 @@ namespace TomatoTimer
                     MyTimer.StartTomTimer(); 
                 }
                 timer1.Enabled = true;
-                if (btn_NewTim.Enabled) { btn_NewTim.Enabled = false; }
+                if (btn_NewTim.Enabled) 
+                {
+                    btn_RestartTimer.Enabled = btn_RestartInter.Enabled = btn_NewTim.Enabled = false;
+                }
             }
             else 
             {
                 timer1.Enabled = false;
                 bStart.Text = "Старт";
-                btn_NewTim.Enabled = true;
+                btn_RestartTimer.Enabled= btn_RestartInter.Enabled = btn_NewTim.Enabled = true;
             }
         }
         //запуск нового таймера
@@ -110,9 +114,6 @@ namespace TomatoTimer
             MyTimer.ShowRealTimInter(minute, second);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

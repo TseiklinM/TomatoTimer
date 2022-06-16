@@ -121,31 +121,6 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bSettings.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="bSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="bSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 34</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;bSettings.Name" xml:space="preserve">
-    <value>bSettings</value>
-  </data>
-  <data name="&gt;&gt;bSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bSettings.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bSettings.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="bStart.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -176,7 +151,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bStart.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="tb_TimeRound.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt</value>
@@ -209,7 +184,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tb_TimeRound.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="tBRound.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
@@ -239,7 +214,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tBRound.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="btn_NewTim.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -248,13 +223,13 @@
     <value>229, 56</value>
   </data>
   <data name="btn_NewTim.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 38</value>
+    <value>106, 51</value>
   </data>
   <data name="btn_NewTim.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <data name="btn_NewTim.Text" xml:space="preserve">
-    <value>New Timer</value>
+    <value>Новый Таймер</value>
   </data>
   <data name="&gt;&gt;btn_NewTim.Name" xml:space="preserve">
     <value>btn_NewTim</value>
@@ -266,6 +241,60 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_NewTim.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_RestartTimer.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btn_RestartTimer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 117</value>
+  </data>
+  <data name="btn_RestartTimer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 47</value>
+  </data>
+  <data name="btn_RestartTimer.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btn_RestartTimer.Text" xml:space="preserve">
+    <value>Рестарт Таймера</value>
+  </data>
+  <data name="&gt;&gt;btn_RestartTimer.Name" xml:space="preserve">
+    <value>btn_RestartTimer</value>
+  </data>
+  <data name="&gt;&gt;btn_RestartTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_RestartTimer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_RestartTimer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_RestartInter.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btn_RestartInter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 170</value>
+  </data>
+  <data name="btn_RestartInter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 48</value>
+  </data>
+  <data name="btn_RestartInter.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btn_RestartInter.Text" xml:space="preserve">
+    <value>Рестарт Интервала</value>
+  </data>
+  <data name="&gt;&gt;btn_RestartInter.Name" xml:space="preserve">
+    <value>btn_RestartInter</value>
+  </data>
+  <data name="&gt;&gt;btn_RestartInter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_RestartInter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_RestartInter.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -278,7 +307,7 @@
     <value>None</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>397, 169</value>
+    <value>398, 249</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1945,6 +1974,12 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAA
 </value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>420, 300</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>420, 300</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Пимидоный таймер</value>

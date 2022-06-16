@@ -36,6 +36,8 @@ namespace TomatoTimer
             this.tb_TimeRound = new System.Windows.Forms.TextBox();
             this.tBRound = new System.Windows.Forms.TextBox();
             this.btn_NewTim = new System.Windows.Forms.Button();
+            this.btn_RestartTimer = new System.Windows.Forms.Button();
+            this.btn_RestartInter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // timer1
@@ -74,32 +76,25 @@ namespace TomatoTimer
             this.btn_NewTim.UseVisualStyleBackColor = true;
             this.btn_NewTim.Click += new System.EventHandler(this.btn_NewTim_Click);
             // 
-            // bResetInterval
+            // btn_RestartTimer
             // 
-            resources.ApplyResources(this.bResetInterval, "bResetInterval");
-            this.bResetInterval.ForeColor = System.Drawing.SystemColors.Window;
-            this.bResetInterval.Name = "bResetInterval";
-            this.bResetInterval.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btn_RestartTimer, "btn_RestartTimer");
+            this.btn_RestartTimer.Name = "btn_RestartTimer";
+            this.btn_RestartTimer.UseVisualStyleBackColor = true;
             // 
-            // bResetTimer
+            // btn_RestartInter
             // 
-            resources.ApplyResources(this.bResetTimer, "bResetTimer");
-            this.bResetTimer.ForeColor = System.Drawing.SystemColors.Window;
-            this.bResetTimer.Name = "bResetTimer";
-            this.bResetTimer.UseVisualStyleBackColor = true;
-            // 
-            // bNewTimer
-            // 
-            resources.ApplyResources(this.bNewTimer, "bNewTimer");
-            this.bNewTimer.ForeColor = System.Drawing.SystemColors.Window;
-            this.bNewTimer.Name = "bNewTimer";
-            this.bNewTimer.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btn_RestartInter, "btn_RestartInter");
+            this.btn_RestartInter.Name = "btn_RestartInter";
+            this.btn_RestartInter.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCoral;
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.btn_RestartInter);
+            this.Controls.Add(this.btn_RestartTimer);
             this.Controls.Add(this.btn_NewTim);
             this.Controls.Add(this.tBRound);
             this.Controls.Add(this.tb_TimeRound);
@@ -121,6 +116,8 @@ namespace TomatoTimer
         private System.Windows.Forms.TextBox tb_TimeRound;
         private System.Windows.Forms.TextBox tBRound;
         private System.Windows.Forms.Button btn_NewTim;
+        private System.Windows.Forms.Button btn_RestartTimer;
+        private System.Windows.Forms.Button btn_RestartInter;
     }
 }
 
