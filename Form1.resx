@@ -139,7 +139,7 @@
     <value>1</value>
   </data>
   <data name="bStart.Text" xml:space="preserve">
-    <value>Старт/Стоп</value>
+    <value>Старт</value>
   </data>
   <data name="&gt;&gt;bStart.Name" xml:space="preserve">
     <value>bStart</value>
@@ -151,36 +151,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bStart.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="bPause.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="bPause.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
-  </data>
-  <data name="bPause.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 73</value>
-  </data>
-  <data name="bPause.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 34</value>
-  </data>
-  <data name="bPause.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="bPause.Text" xml:space="preserve">
-    <value>Пауза</value>
-  </data>
-  <data name="&gt;&gt;bPause.Name" xml:space="preserve">
-    <value>bPause</value>
-  </data>
-  <data name="&gt;&gt;bPause.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bPause.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bPause.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="tb_TimeRound.Font" type="System.Drawing.Font, System.Drawing">
@@ -246,8 +216,11 @@
   <data name="&gt;&gt;tBRound.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="btn_NewTim.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="btn_NewTim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 113</value>
+    <value>229, 56</value>
   </data>
   <data name="btn_NewTim.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 38</value>

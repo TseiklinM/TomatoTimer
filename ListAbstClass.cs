@@ -90,16 +90,12 @@ namespace TomatoTimer
         public getMyInfo getMyTime;
         public getMyInfo getMyName;
         public getMyInfo getMyNum;
-        
-        //MyTimer timer;
         public int numActivInt { get; private set; }
         List<Interval> listIntervalTimer;
         public TomTimer(List<Interval> intertime) 
         {
             listIntervalTimer = intertime;
             numActivInt = 0;
-            //timer = new MyTimer();
-            //timer.GetYourTime += ShowRealTimInter;
         }
         void numUp() 
         {
@@ -109,7 +105,6 @@ namespace TomatoTimer
                 numActivInt = 0; 
             }
         }
-        //public Interval GetActivInterval() { return listIntervalTimer[numActivInt]; }
         public void StartTomTimer() 
         {
             if (numActivInt != 0) { numActivInt = 0; }
