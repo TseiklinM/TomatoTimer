@@ -30,155 +30,156 @@ namespace TomatoTimer
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
-            this.tBarWorkTime = new System.Windows.Forms.TrackBar();
+            this.dataGV_ListInterval = new System.Windows.Forms.DataGridView();
+            this.NameInterval = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TimeInterval = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tb_NamInter = new System.Windows.Forms.TextBox();
+            this.numUD_TimInter = new System.Windows.Forms.NumericUpDown();
+            this.btn_Add = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.tBarShortBreak = new System.Windows.Forms.TrackBar();
             this.label2 = new System.Windows.Forms.Label();
-            this.tBarLongBreak = new System.Windows.Forms.TrackBar();
-            this.label4 = new System.Windows.Forms.Label();
-            this.rBSound = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tBarIntervalRounds = new System.Windows.Forms.TrackBar();
-            ((System.ComponentModel.ISupportInitialize)(this.tBarWorkTime)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBarShortBreak)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBarLongBreak)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBarIntervalRounds)).BeginInit();
+            this.btn_ClearGrid = new System.Windows.Forms.Button();
+            this.btn_CrTim = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGV_ListInterval)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUD_TimInter)).BeginInit();
             this.SuspendLayout();
             // 
-            // tBarWorkTime
+            // dataGV_ListInterval
             // 
-            this.tBarWorkTime.AutoSize = false;
-            this.tBarWorkTime.LargeChange = 10;
-            this.tBarWorkTime.Location = new System.Drawing.Point(15, 34);
-            this.tBarWorkTime.Maximum = 60;
-            this.tBarWorkTime.Minimum = 10;
-            this.tBarWorkTime.Name = "tBarWorkTime";
-            this.tBarWorkTime.Size = new System.Drawing.Size(295, 45);
-            this.tBarWorkTime.TabIndex = 0;
-            this.tBarWorkTime.TickFrequency = 5;
-            this.tBarWorkTime.Value = 25;
-            this.tBarWorkTime.Scroll += new System.EventHandler(this.tBarWorkTime_Scroll);
+            this.dataGV_ListInterval.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGV_ListInterval.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NameInterval,
+            this.TimeInterval});
+            this.dataGV_ListInterval.Location = new System.Drawing.Point(12, 79);
+            this.dataGV_ListInterval.Name = "dataGV_ListInterval";
+            this.dataGV_ListInterval.RowHeadersWidth = 51;
+            this.dataGV_ListInterval.RowTemplate.Height = 24;
+            this.dataGV_ListInterval.Size = new System.Drawing.Size(324, 239);
+            this.dataGV_ListInterval.TabIndex = 0;
+            // 
+            // NameInterval
+            // 
+            this.NameInterval.HeaderText = "Название";
+            this.NameInterval.MinimumWidth = 6;
+            this.NameInterval.Name = "NameInterval";
+            this.NameInterval.ReadOnly = true;
+            this.NameInterval.Width = 120;
+            // 
+            // TimeInterval
+            // 
+            this.TimeInterval.HeaderText = "Время(мин.)";
+            this.TimeInterval.MinimumWidth = 6;
+            this.TimeInterval.Name = "TimeInterval";
+            this.TimeInterval.ReadOnly = true;
+            this.TimeInterval.Width = 90;
+            // 
+            // tb_NamInter
+            // 
+            this.tb_NamInter.Location = new System.Drawing.Point(13, 30);
+            this.tb_NamInter.Name = "tb_NamInter";
+            this.tb_NamInter.Size = new System.Drawing.Size(170, 22);
+            this.tb_NamInter.TabIndex = 1;
+            this.tb_NamInter.TextChanged += new System.EventHandler(this.tb_NamInter_TextChanged);
+            // 
+            // numUD_TimInter
+            // 
+            this.numUD_TimInter.Location = new System.Drawing.Point(190, 29);
+            this.numUD_TimInter.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.numUD_TimInter.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.numUD_TimInter.Name = "numUD_TimInter";
+            this.numUD_TimInter.Size = new System.Drawing.Size(64, 22);
+            this.numUD_TimInter.TabIndex = 2;
+            this.numUD_TimInter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numUD_TimInter.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // btn_Add
+            // 
+            this.btn_Add.Enabled = false;
+            this.btn_Add.Location = new System.Drawing.Point(341, 28);
+            this.btn_Add.Name = "btn_Add";
+            this.btn_Add.Size = new System.Drawing.Size(75, 23);
+            this.btn_Add.TabIndex = 3;
+            this.btn_Add.Text = "Add";
+            this.btn_Add.UseVisualStyleBackColor = true;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(13, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Рабочий тайминг";
-            // 
-            // tBarShortBreak
-            // 
-            this.tBarShortBreak.AutoSize = false;
-            this.tBarShortBreak.LargeChange = 1;
-            this.tBarShortBreak.Location = new System.Drawing.Point(15, 98);
-            this.tBarShortBreak.Maximum = 7;
-            this.tBarShortBreak.Minimum = 3;
-            this.tBarShortBreak.Name = "tBarShortBreak";
-            this.tBarShortBreak.Size = new System.Drawing.Size(295, 45);
-            this.tBarShortBreak.TabIndex = 1;
-            this.tBarShortBreak.Value = 5;
+            this.label1.Size = new System.Drawing.Size(72, 17);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Название";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 82);
+            this.label2.Location = new System.Drawing.Point(190, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Короткий перерыв";
+            this.label2.Size = new System.Drawing.Size(50, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Время";
             // 
-            // tBarLongBreak
+            // btn_ClearGrid
             // 
-            this.tBarLongBreak.AutoSize = false;
-            this.tBarLongBreak.Location = new System.Drawing.Point(12, 162);
-            this.tBarLongBreak.Maximum = 45;
-            this.tBarLongBreak.Minimum = 10;
-            this.tBarLongBreak.Name = "tBarLongBreak";
-            this.tBarLongBreak.Size = new System.Drawing.Size(295, 45);
-            this.tBarLongBreak.TabIndex = 4;
-            this.tBarLongBreak.TickFrequency = 5;
-            this.tBarLongBreak.Value = 30;
+            this.btn_ClearGrid.Enabled = false;
+            this.btn_ClearGrid.Location = new System.Drawing.Point(342, 79);
+            this.btn_ClearGrid.Name = "btn_ClearGrid";
+            this.btn_ClearGrid.Size = new System.Drawing.Size(75, 23);
+            this.btn_ClearGrid.TabIndex = 6;
+            this.btn_ClearGrid.Text = "Clear";
+            this.btn_ClearGrid.UseVisualStyleBackColor = true;
+            this.btn_ClearGrid.Click += new System.EventHandler(this.btn_ClearGrid_Click);
             // 
-            // label4
+            // btn_CrTim
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 260);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Звук";
-            // 
-            // rBSound
-            // 
-            this.rBSound.AutoSize = true;
-            this.rBSound.Location = new System.Drawing.Point(49, 260);
-            this.rBSound.Name = "rBSound";
-            this.rBSound.Size = new System.Drawing.Size(14, 13);
-            this.rBSound.TabIndex = 6;
-            this.rBSound.TabStop = true;
-            this.rBSound.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rBSound.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 146);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Большой перерыв";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 194);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Интервал раундов";
-            // 
-            // tBarIntervalRounds
-            // 
-            this.tBarIntervalRounds.AutoSize = false;
-            this.tBarIntervalRounds.LargeChange = 2;
-            this.tBarIntervalRounds.Location = new System.Drawing.Point(12, 213);
-            this.tBarIntervalRounds.Maximum = 16;
-            this.tBarIntervalRounds.Minimum = 4;
-            this.tBarIntervalRounds.Name = "tBarIntervalRounds";
-            this.tBarIntervalRounds.Size = new System.Drawing.Size(295, 45);
-            this.tBarIntervalRounds.SmallChange = 2;
-            this.tBarIntervalRounds.TabIndex = 8;
-            this.tBarIntervalRounds.TickFrequency = 2;
-            this.tBarIntervalRounds.Value = 8;
+            this.btn_CrTim.Enabled = false;
+            this.btn_CrTim.Location = new System.Drawing.Point(13, 334);
+            this.btn_CrTim.Name = "btn_CrTim";
+            this.btn_CrTim.Size = new System.Drawing.Size(323, 23);
+            this.btn_CrTim.TabIndex = 7;
+            this.btn_CrTim.Text = "Create Timer";
+            this.btn_CrTim.UseVisualStyleBackColor = true;
+            this.btn_CrTim.Click += new System.EventHandler(this.btn_CrTim_Click);
             // 
             // Settings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 297);
-            this.Controls.Add(this.tBarIntervalRounds);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.rBSound);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.tBarLongBreak);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.tBarShortBreak);
+            this.ClientSize = new System.Drawing.Size(428, 369);
+            this.Controls.Add(this.btn_CrTim);
+            this.Controls.Add(this.btn_ClearGrid);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tBarWorkTime);
+            this.Controls.Add(this.btn_Add);
+            this.Controls.Add(this.numUD_TimInter);
+            this.Controls.Add(this.tb_NamInter);
+            this.Controls.Add(this.dataGV_ListInterval);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(450, 420);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(450, 420);
             this.Name = "Settings";
             this.Text = "Настройки";
-            ((System.ComponentModel.ISupportInitialize)(this.tBarWorkTime)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBarShortBreak)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBarLongBreak)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBarIntervalRounds)).EndInit();
+            this.Load += new System.EventHandler(this.Settings_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGV_ListInterval)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numUD_TimInter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,15 +187,15 @@ namespace TomatoTimer
 
         #endregion
 
-        private System.Windows.Forms.TrackBar tBarWorkTime;
+        private System.Windows.Forms.DataGridView dataGV_ListInterval;
+        private System.Windows.Forms.TextBox tb_NamInter;
+        private System.Windows.Forms.NumericUpDown numUD_TimInter;
+        private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TrackBar tBarShortBreak;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TrackBar tBarLongBreak;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton rBSound;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TrackBar tBarIntervalRounds;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameInterval;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TimeInterval;
+        private System.Windows.Forms.Button btn_ClearGrid;
+        private System.Windows.Forms.Button btn_CrTim;
     }
 }

@@ -120,35 +120,6 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bSettings.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        p1qfCfkbtCAe8Z0QFMcAAAAASUVORK5CYII=
-</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bSettings.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -173,25 +144,27 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bSettings.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>5</value>
   </data>
   <data name="bStart.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bStart.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="bStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 23</value>
+    <value>229, 13</value>
   </data>
   <data name="bStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 37</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bStart.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="bStart.Text" xml:space="preserve">
-    <value>Старт/Стоп</value>
+    <value>Старт</value>
   </data>
   <data name="&gt;&gt;bStart.Name" xml:space="preserve">
     <value>bStart</value>
@@ -203,88 +176,55 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bStart.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="bPause.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="bPause.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
-  </data>
-  <data name="bPause.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bPause.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 66</value>
-  </data>
-  <data name="bPause.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 34</value>
-  </data>
-  <data name="bPause.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="bPause.Text" xml:space="preserve">
-    <value>Пауза</value>
-  </data>
-  <data name="&gt;&gt;bPause.Name" xml:space="preserve">
-    <value>bPause</value>
-  </data>
-  <data name="&gt;&gt;bPause.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bPause.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bPause.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="textBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 57.75pt</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 23</value>
-  </data>
-  <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 88</value>
-  </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="textBox1.Text" xml:space="preserve">
+  <data name="tb_TimeRound.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 48pt</value>
+  </data>
+  <data name="tb_TimeRound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="tb_TimeRound.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tb_TimeRound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 94</value>
+  </data>
+  <data name="tb_TimeRound.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tb_TimeRound.Text" xml:space="preserve">
     <value>00:00</value>
   </data>
-  <data name="textBox1.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+  <data name="tb_TimeRound.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;tb_TimeRound.Name" xml:space="preserve">
+    <value>tb_TimeRound</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;tb_TimeRound.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tb_TimeRound.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;tb_TimeRound.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="tBRound.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="tBRound.Location" type="System.Drawing.Point, System.Drawing">
-    <value>53, 138</value>
+    <value>12, 113</value>
   </data>
   <data name="tBRound.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 15</value>
+    <value>201, 19</value>
   </data>
   <data name="tBRound.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="tBRound.Text" xml:space="preserve">
-    <value>1</value>
+    <value>------</value>
   </data>
   <data name="tBRound.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
@@ -301,133 +241,31 @@
   <data name="&gt;&gt;tBRound.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="btn_NewTim.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  <data name="btn_NewTim.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 56</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 138</value>
+  <data name="btn_NewTim.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 38</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 15</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_NewTim.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Раунд</value>
+  <data name="btn_NewTim.Text" xml:space="preserve">
+    <value>New Timer</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;btn_NewTim.Name" xml:space="preserve">
+    <value>btn_NewTim</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="bResetInterval.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="bResetInterval.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="bResetInterval.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bResetInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 117</value>
-  </data>
-  <data name="bResetInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 36</value>
-  </data>
-  <data name="bResetInterval.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="bResetInterval.Text" xml:space="preserve">
-    <value>Сброс интервала</value>
-  </data>
-  <data name="&gt;&gt;bResetInterval.Name" xml:space="preserve">
-    <value>bResetInterval</value>
-  </data>
-  <data name="&gt;&gt;bResetInterval.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_NewTim.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;bResetInterval.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_NewTim.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;bResetInterval.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="bResetTimer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="bResetTimer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="bResetTimer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bResetTimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 117</value>
-  </data>
-  <data name="bResetTimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 36</value>
-  </data>
-  <data name="bResetTimer.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="bResetTimer.Text" xml:space="preserve">
-    <value>Сброс таймера</value>
-  </data>
-  <data name="&gt;&gt;bResetTimer.Name" xml:space="preserve">
-    <value>bResetTimer</value>
-  </data>
-  <data name="&gt;&gt;bResetTimer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bResetTimer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bResetTimer.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="bNewTimer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="bNewTimer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="bNewTimer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bNewTimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 117</value>
-  </data>
-  <data name="bNewTimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 36</value>
-  </data>
-  <data name="bNewTimer.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="bNewTimer.Text" xml:space="preserve">
-    <value>Новый таймер</value>
-  </data>
-  <data name="&gt;&gt;bNewTimer.Name" xml:space="preserve">
-    <value>bNewTimer</value>
-  </data>
-  <data name="&gt;&gt;bNewTimer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bNewTimer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bNewTimer.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_NewTim.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
