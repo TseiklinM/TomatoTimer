@@ -7,7 +7,7 @@ using System.Data;
 
 namespace TomatoTimer
 {
-    public class Interval:IN_Interval
+    public class Interval:IInterval
     {
         public string Name { get; private set; }
         public int time { get; private set; }
@@ -17,15 +17,15 @@ namespace TomatoTimer
             time = num;
         }
     }
-    public class TomTimer:In_TomTimer
+    public class TomTimer:TomTimerBase
     {
         //public delegate void getMyInfo(object str);
         //public getMyInfo getMyTime;
         //public getMyInfo getMyName;
         //public getMyInfo getMyNum;
         public new int numActivInt { get; private set; }
-        List<IN_Interval> listIntervalTimer;
-        public TomTimer(List<IN_Interval> intertime) 
+        List<IInterval> listIntervalTimer;
+        public TomTimer(List<IInterval> intertime) 
         {
             listIntervalTimer = intertime;
             numActivInt =0;
@@ -79,12 +79,12 @@ namespace TomatoTimer
             }
         }
     }
-    public class CustomTT:In_CustomTT 
+    public class CustomTT:ICustomTT 
     {
-        List<IN_Interval> Tl;
+        List<IInterval> Tl;
         public CustomTT() 
         {
-            Tl = new List<IN_Interval>();
+            Tl = new List<IInterval>();
         }
         public override void createListTimer(DataTable Tab)
         {
@@ -94,7 +94,7 @@ namespace TomatoTimer
                 Tl.Add(new Interval(Row[0].ToString(), int.Parse(Row[1].ToString())));
             }
         }
-        public override In_TomTimer GetYeorTimer() 
+        public override TomTimerBase GetYeorTimer() 
         {
             if (Tl.Count == 0) return null;
             else return new TomTimer(Tl);

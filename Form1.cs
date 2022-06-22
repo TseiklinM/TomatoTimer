@@ -17,15 +17,15 @@ namespace TomatoTimer
     //4-основная форма должна сворачиваться
     public partial class Form1 : Form
     {
-        In_CustomTT customTT;
-        In_TomTimer MyTimer;
+        ICustomTT customTT;
+        TomTimerBase MyTimer;
         int minute;
         int second;
         public Form1()
         {
             InitializeComponent();
             MyTimer = null;
-            customTT = new CustomTT();
+            
         }
         //загрузка формы с выбором формы
         private void Form1_Load(object sender, EventArgs e)
@@ -33,11 +33,16 @@ namespace TomatoTimer
             //старт формы настройки
             if (MyTimer == null)
             {
+                customTT = new CustomTT();
                 Settings SettForm = new Settings();
                 SettForm.getListInter = customTT.createListTimer;
                 SettForm.ShowDialog();
                 MyTimer = customTT.GetYeorTimer();
-                if (MyTimer != null) Form1_Load(sender, e);
+                if (MyTimer != null)
+                {
+                    customTT = null;
+                    Form1_Load(sender, e); 
+                }
                 else Close();
             }
             //основная форма
@@ -113,6 +118,9 @@ namespace TomatoTimer
             MyTimer.ShowRealTimInter(minute, second);
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

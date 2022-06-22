@@ -16,7 +16,7 @@ namespace TomatoTimer
         public getMyList getListInter;
         public Settings()
         {
-            InitializeComponent();   
+            InitializeComponent();
         }
 
         private void tb_NamInter_TextChanged(object sender, EventArgs e)
@@ -31,14 +31,31 @@ namespace TomatoTimer
             else btn_CrTim.Enabled = false;
             if (!btn_ClearGrid.Enabled) { btn_ClearGrid.Enabled = true; }
             dataGV_ListInterval.Rows.Add(tb_NamInter.Text,(int)numUD_TimInter.Value);
-            tb_NamInter.Text = "";
+            
             tb_NamInter.Focus();
+            if (dataGV_ListInterval.Rows.Count % 2 == 0) 
+            {
+                tb_NamInter.Text = "Большёй интервал";
+                numUD_TimInter.Maximum = 60;
+                numUD_TimInter.Minimum = 15;
+                numUD_TimInter.Value = 25;
+            }
+            else 
+            {
+                tb_NamInter.Text = "Малый интервал";
+                numUD_TimInter.Maximum = 7;
+                numUD_TimInter.Minimum = 3;
+                numUD_TimInter.Value = 5;
+            }
         }
 
         private void Settings_Load(object sender, EventArgs e)
         {
-           
-            
+            numUD_TimInter.Maximum = 7;
+            numUD_TimInter.Minimum = 3;
+            numUD_TimInter.Value = 5;
+            tb_NamInter.Text = "Малый интервал";
+            tb_NamInter.Focus();
         }
 
         private void btn_ClearGrid_Click(object sender, EventArgs e)
@@ -46,9 +63,9 @@ namespace TomatoTimer
             btn_ClearGrid.Enabled = false;
             btn_CrTim.Enabled = false;
             dataGV_ListInterval.Rows.Clear();
-            
-        }
+            Settings_Load(sender, e);
 
+        }
         private void btn_CrTim_Click(object sender, EventArgs e)
         {
             var tab = new DataTable();

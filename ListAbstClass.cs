@@ -8,14 +8,14 @@ using System.Timers;
 
 namespace TomatoTimer
 {
-    public interface IN_Interval 
+    public interface IInterval 
     {
         string Name { get;  }
         int time { get;  }
         
     }
     
-    public abstract class In_TomTimer 
+    public abstract class TomTimerBase
     {
         public delegate void getMyInfo(object str);
         public getMyInfo getMyTime;
@@ -25,9 +25,9 @@ namespace TomatoTimer
         public abstract void StartTomTimer();
         public abstract void ShowRealTimInter(int min, int sec);
     }
-    public abstract class In_CustomTT
+    public abstract class ICustomTT
     { 
         public abstract void createListTimer(DataTable Tab);
-        public abstract In_TomTimer GetYeorTimer();
+        public abstract TomTimerBase GetYeorTimer();
     }
 }

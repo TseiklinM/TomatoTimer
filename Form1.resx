@@ -129,10 +129,10 @@
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="bStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 13</value>
+    <value>278, 12</value>
   </data>
   <data name="bStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 37</value>
+    <value>110, 50</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bStart.TabIndex" type="System.Int32, mscorlib">
@@ -151,7 +151,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bStart.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="tb_TimeRound.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 48pt</value>
@@ -184,7 +184,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tb_TimeRound.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="tBRound.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
@@ -193,7 +193,7 @@
     <value>12, 113</value>
   </data>
   <data name="tBRound.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 19</value>
+    <value>201, 15</value>
   </data>
   <data name="tBRound.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -214,16 +214,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tBRound.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="btn_NewTim.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="btn_NewTim.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_NewTim.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
   <data name="btn_NewTim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 56</value>
+    <value>278, 83</value>
   </data>
   <data name="btn_NewTim.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 51</value>
+    <value>110, 50</value>
   </data>
   <data name="btn_NewTim.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -241,16 +247,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_NewTim.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btn_RestartTimer.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="btn_RestartTimer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_RestartTimer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
   <data name="btn_RestartTimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 117</value>
+    <value>278, 139</value>
   </data>
   <data name="btn_RestartTimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 47</value>
+    <value>110, 50</value>
   </data>
   <data name="btn_RestartTimer.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -268,16 +280,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_RestartTimer.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btn_RestartInter.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="btn_RestartInter.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_RestartInter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
   <data name="btn_RestartInter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 170</value>
+    <value>278, 195</value>
   </data>
   <data name="btn_RestartInter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 48</value>
+    <value>110, 50</value>
   </data>
   <data name="btn_RestartInter.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -295,6 +313,30 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_RestartInter.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 208</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -307,7 +349,7 @@
     <value>None</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>398, 249</value>
+    <value>400, 257</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
