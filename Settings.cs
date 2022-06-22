@@ -16,9 +16,7 @@ namespace TomatoTimer
         public getMyList getListInter;
         public Settings()
         {
-            InitializeComponent();
-            
-            
+            InitializeComponent();   
         }
 
         private void tb_NamInter_TextChanged(object sender, EventArgs e)
@@ -58,13 +56,12 @@ namespace TomatoTimer
             {
                 tab.Columns.Add(new DataColumn("", Type.GetType("System.String")));
             }
-            foreach(DataGridViewRow Row in dataGV_ListInterval.Rows) 
+            for(int i=0;i<dataGV_ListInterval.RowCount-1;i++) 
             {
                 DataRow fu1 = tab.NewRow();
-                for(int i = 0; i < dataGV_ListInterval.ColumnCount; i++) 
-                {
-                    fu1[i] = Row.Cells[i].Value.ToString();
-                }
+               
+                fu1[0] = dataGV_ListInterval.Rows[i].Cells["NameInter"].Value.ToString();
+                fu1[1] = dataGV_ListInterval.Rows[i].Cells["TimeNum"].Value.ToString();
                 tab.Rows.Add(fu1);
             }
             getListInter?.Invoke(tab);
