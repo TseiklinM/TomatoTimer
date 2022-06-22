@@ -12,13 +12,13 @@ namespace TomatoTimer
 {
     public partial class Settings : Form
     {
-        public delegate void getMyList(List<Interval> Tl);
+        public delegate void getMyList(DataTable Tab);
         public getMyList getListInter;
-        List<Interval> Tl ;
         public Settings()
         {
             InitializeComponent();
-            Tl = new List<Interval>();
+            
+            
         }
 
         private void tb_NamInter_TextChanged(object sender, EventArgs e)
@@ -33,7 +33,6 @@ namespace TomatoTimer
             else btn_CrTim.Enabled = false;
             if (!btn_ClearGrid.Enabled) { btn_ClearGrid.Enabled = true; }
             dataGV_ListInterval.Rows.Add(tb_NamInter.Text,(int)numUD_TimInter.Value);
-            Tl.Add(new Interval(tb_NamInter.Text, (int)numUD_TimInter.Value));
             tb_NamInter.Text = "";
             tb_NamInter.Focus();
         }
@@ -49,12 +48,26 @@ namespace TomatoTimer
             btn_ClearGrid.Enabled = false;
             btn_CrTim.Enabled = false;
             dataGV_ListInterval.Rows.Clear();
-            Tl.Clear();
+            
         }
 
         private void btn_CrTim_Click(object sender, EventArgs e)
         {
-            getListInter?.Invoke(Tl);
+            var tab = new DataTable();
+            for (int i = 0; i < dataGV_ListInterval.ColumnCount; i++)
+            {
+                tab.Columns.Add(new DataColumn("", Type.GetType("System.String")));
+            }
+            foreach(DataGridViewRow Row in dataGV_ListInterval.Rows) 
+            {
+                DataRow fu1 = tab.NewRow();
+                for(int i = 0; i < dataGV_ListInterval.ColumnCount; i++) 
+                {
+                    fu1[i] = Row.Cells[i].Value.ToString();
+                }
+                tab.Rows.Add(fu1);
+            }
+            getListInter?.Invoke(tab);
             Close();
         }
     }

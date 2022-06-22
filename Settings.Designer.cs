@@ -31,8 +31,6 @@ namespace TomatoTimer
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.dataGV_ListInterval = new System.Windows.Forms.DataGridView();
-            this.NameInterval = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TimeInterval = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tb_NamInter = new System.Windows.Forms.TextBox();
             this.numUD_TimInter = new System.Windows.Forms.NumericUpDown();
             this.btn_Add = new System.Windows.Forms.Button();
@@ -40,6 +38,8 @@ namespace TomatoTimer
             this.label2 = new System.Windows.Forms.Label();
             this.btn_ClearGrid = new System.Windows.Forms.Button();
             this.btn_CrTim = new System.Windows.Forms.Button();
+            this.NameInter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TimeNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_ListInterval)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUD_TimInter)).BeginInit();
             this.SuspendLayout();
@@ -48,30 +48,14 @@ namespace TomatoTimer
             // 
             this.dataGV_ListInterval.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGV_ListInterval.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NameInterval,
-            this.TimeInterval});
+            this.NameInter,
+            this.TimeNum});
             this.dataGV_ListInterval.Location = new System.Drawing.Point(12, 79);
             this.dataGV_ListInterval.Name = "dataGV_ListInterval";
             this.dataGV_ListInterval.RowHeadersWidth = 51;
             this.dataGV_ListInterval.RowTemplate.Height = 24;
             this.dataGV_ListInterval.Size = new System.Drawing.Size(324, 239);
             this.dataGV_ListInterval.TabIndex = 0;
-            // 
-            // NameInterval
-            // 
-            this.NameInterval.HeaderText = "Название";
-            this.NameInterval.MinimumWidth = 6;
-            this.NameInterval.Name = "NameInterval";
-            this.NameInterval.ReadOnly = true;
-            this.NameInterval.Width = 120;
-            // 
-            // TimeInterval
-            // 
-            this.TimeInterval.HeaderText = "Время(мин.)";
-            this.TimeInterval.MinimumWidth = 6;
-            this.TimeInterval.Name = "TimeInterval";
-            this.TimeInterval.ReadOnly = true;
-            this.TimeInterval.Width = 90;
             // 
             // tb_NamInter
             // 
@@ -155,6 +139,22 @@ namespace TomatoTimer
             this.btn_CrTim.UseVisualStyleBackColor = true;
             this.btn_CrTim.Click += new System.EventHandler(this.btn_CrTim_Click);
             // 
+            // NameInter
+            // 
+            this.NameInter.HeaderText = "Название";
+            this.NameInter.MinimumWidth = 6;
+            this.NameInter.Name = "NameInter";
+            this.NameInter.ReadOnly = true;
+            this.NameInter.Width = 125;
+            // 
+            // TimeNum
+            // 
+            this.TimeNum.HeaderText = "Время(мин.)";
+            this.TimeNum.MinimumWidth = 6;
+            this.TimeNum.Name = "TimeNum";
+            this.TimeNum.ReadOnly = true;
+            this.TimeNum.Width = 125;
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -193,9 +193,9 @@ namespace TomatoTimer
         private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NameInterval;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TimeInterval;
         private System.Windows.Forms.Button btn_ClearGrid;
         private System.Windows.Forms.Button btn_CrTim;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameInter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TimeNum;
     }
 }

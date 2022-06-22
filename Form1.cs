@@ -17,13 +17,15 @@ namespace TomatoTimer
     //4-основная форма должна сворачиваться
     public partial class Form1 : Form
     {
-        TomTimer MyTimer;
+        In_CustomTT customTT;
+        In_TomTimer MyTimer;
         int minute;
         int second;
         public Form1()
         {
             InitializeComponent();
             MyTimer = null;
+            customTT = new CustomTT();
         }
         //загрузка формы с выбором формы
         private void Form1_Load(object sender, EventArgs e)
@@ -32,9 +34,11 @@ namespace TomatoTimer
             if (MyTimer == null)
             {
                 Settings SettForm = new Settings();
-                SettForm.getListInter = setInervalList;
+                SettForm.getListInter = customTT.createListTimer;
                 SettForm.ShowDialog();
-                Form1_Load(sender,e);
+                MyTimer = customTT.GetYeorTimer();
+                if (MyTimer != null) Form1_Load(sender, e);
+                else Close();
             }
             //основная форма
             else 
@@ -59,11 +63,6 @@ namespace TomatoTimer
         //вывод данных на форму
         void ShowYuerName(object str) { tBRound.Text = str.ToString(); }
         void ShowYuerTime(object str) { tb_TimeRound.Text = str.ToString(); }
-        //метод будет удоллен
-        void setInervalList(List<Interval> Tl) 
-        { 
-            MyTimer = new TomTimer(Tl); 
-        }
         //старт пауза
         private void bStart_Click(object sender, EventArgs e)
         {
