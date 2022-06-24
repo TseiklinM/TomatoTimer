@@ -19,10 +19,6 @@ namespace TomatoTimer
     }
     public class TomTimer:TomTimerBase
     {
-        //public delegate void getMyInfo(object str);
-        //public getMyInfo getMyTime;
-        //public getMyInfo getMyName;
-        //public getMyInfo getMyNum;
         public new int numActivInt { get; private set; }
         List<IInterval> listIntervalTimer;
         public TomTimer(List<IInterval> intertime) 
@@ -48,19 +44,42 @@ namespace TomatoTimer
             }
             getMyNum?.Invoke(listIntervalTimer[numActivInt].time);
         }
+        public override void RestartInterval()
+        {
+            if (listIntervalTimer[numActivInt].time < 10)
+            {
+                getMyTime?.Invoke("0" + listIntervalTimer[numActivInt].time + ":00");
+            }
+            getMyTime?.Invoke(listIntervalTimer[numActivInt].time + ":00");
+            getMyNum?.Invoke(listIntervalTimer[numActivInt].time);
+        }
         public override void ShowRealTimInter(int min, int sec)
         {
             if (min == 0)
             {
+                if (sec == 3) 
+                { 
+                    getMyMess?.Invoke(listIntervalTimer[numActivInt].Name+" завершён!!!"); 
+                }
                 if (sec == 0)
                 {
                     numUp();
-                    getMyName?.Invoke(listIntervalTimer[numActivInt].Name);
-                    if (listIntervalTimer[numActivInt].time < 10)
+                    if (numActivInt != 0)
                     {
-                        getMyTime?.Invoke("0" + listIntervalTimer[numActivInt].time + ":00");
+                        getMyName?.Invoke(listIntervalTimer[numActivInt].Name);
+                        if (listIntervalTimer[numActivInt].time < 10)
+                        {
+                            getMyTime?.Invoke("0" + listIntervalTimer[numActivInt].time + ":00");
+                        }
+                        getMyTime?.Invoke(listIntervalTimer[numActivInt].time + ":00");
+                        getMyNum?.Invoke(listIntervalTimer[numActivInt].time);
                     }
-                    getMyNum?.Invoke(listIntervalTimer[numActivInt].time);
+                    else
+                    {
+                        getMyNum?.Invoke(numActivInt);
+                        getMyTime?.Invoke("00:00");
+                        getMyMess?.Invoke("Таймер окончен!!!");
+                    }
                 }
                 else
                 {
@@ -88,8 +107,8 @@ namespace TomatoTimer
         }
         public override void createListTimer(DataTable Tab)
         {
-            
-            foreach(DataRow Row in Tab.Rows) 
+            Tl.Clear();
+            foreach (DataRow Row in Tab.Rows) 
             {
                 Tl.Add(new Interval(Row[0].ToString(), int.Parse(Row[1].ToString())));
             }

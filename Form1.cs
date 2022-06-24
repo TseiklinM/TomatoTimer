@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,7 +26,7 @@ namespace TomatoTimer
         {
             InitializeComponent();
             MyTimer = null;
-            
+            customTT = new CustomTT();
         }
         //загрузка формы с выбором формы
         private void Form1_Load(object sender, EventArgs e)
@@ -33,14 +34,12 @@ namespace TomatoTimer
             //старт формы настройки
             if (MyTimer == null)
             {
-                customTT = new CustomTT();
                 Settings SettForm = new Settings();
                 SettForm.getListInter = customTT.createListTimer;
                 SettForm.ShowDialog();
                 MyTimer = customTT.GetYeorTimer();
                 if (MyTimer != null)
                 {
-                    customTT = null;
                     Form1_Load(sender, e); 
                 }
                 else Close();
@@ -55,17 +54,39 @@ namespace TomatoTimer
                 MyTimer.getMyNum += setTime;
                 MyTimer.getMyName += ShowYuerName;
                 MyTimer.getMyTime += ShowYuerTime;
+                MyTimer.getMyMess += ShowMessTimer;
                 btn_RestartTimer.Enabled = btn_RestartInter.Enabled = false;
             }
         }
         //получение времени
         void setTime(object num) 
         {
-            minute = (int)num - 1;
-            second = 60;
-            if (MyTimer.numActivInt != 0) { timer1.Enabled = true; }
+            minute = (int)num;
+            if (minute > 0)
+            {
+                --minute;
+                second = 60;
+                if (!timer1.Enabled) { timer1.Enabled = true; }
+            }
+            else 
+            {
+                if (timer1.Enabled) { timer1.Enabled = false; }
+                btn_NewTim.Enabled = true;
+                bStart.Text = "Старт";
+                minute = second = 0;
+            }
         }
         //вывод данных на форму
+        void ShowMessTimer(object str) 
+        {
+            this.Show();
+            if (!checkBox1.Checked)
+            {
+                SoundPlayer sound = new SoundPlayer("barab.wav");
+                sound.Play();
+            }
+            MessageBox.Show((string)str);
+        }
         void ShowYuerName(object str) { tBRound.Text = str.ToString(); }
         void ShowYuerTime(object str) { tb_TimeRound.Text = str.ToString(); }
         //старт пауза
@@ -74,7 +95,7 @@ namespace TomatoTimer
 
             if (!timer1.Enabled)
             {
-                bStart.Text = "Пауза";
+                bStart.Text = "Pause";
                 if (MyTimer.numActivInt == 0 && minute == 0 && second == 0) 
                 {
                     MyTimer.StartTomTimer(); 
@@ -88,7 +109,7 @@ namespace TomatoTimer
             else 
             {
                 timer1.Enabled = false;
-                bStart.Text = "Старт";
+                bStart.Text = "Start";
                 btn_RestartTimer.Enabled= btn_RestartInter.Enabled = btn_NewTim.Enabled = true;
             }
         }
@@ -118,9 +139,29 @@ namespace TomatoTimer
             MyTimer.ShowRealTimInter(minute, second);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+        //рестарт таймер
+        private void btn_RestartTimer_Click(object sender, EventArgs e)
         {
-            
+            minute = second = 0;
+            MyTimer.StartTomTimer();
+            bStart.Text = "Pause";
+            if (btn_NewTim.Enabled)
+            {
+                btn_RestartTimer.Enabled = btn_RestartInter.Enabled = btn_NewTim.Enabled = false;
+            }
         }
+        //рестарт интервал
+        private void btn_RestartInter_Click(object sender, EventArgs e)
+        {
+            MyTimer.RestartInterval();
+            bStart.Text = "Pause";
+            if (btn_NewTim.Enabled)
+            {
+                btn_RestartTimer.Enabled = btn_RestartInter.Enabled = btn_NewTim.Enabled = false;
+            }
+        }
+
+       
     }
 }

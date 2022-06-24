@@ -14,9 +14,11 @@ namespace TomatoTimer
     {
         public delegate void getMyList(DataTable Tab);
         public getMyList getListInter;
+        bool flag;
         public Settings()
         {
             InitializeComponent();
+            flag = false;
         }
 
         private void tb_NamInter_TextChanged(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace TomatoTimer
             tb_NamInter.Focus();
             if (dataGV_ListInterval.Rows.Count % 2 == 0) 
             {
-                tb_NamInter.Text = "Большёй интервал";
+                tb_NamInter.Text = "Большой интервал";
                 numUD_TimInter.Maximum = 60;
                 numUD_TimInter.Minimum = 15;
                 numUD_TimInter.Value = 25;
@@ -82,7 +84,18 @@ namespace TomatoTimer
                 tab.Rows.Add(fu1);
             }
             getListInter?.Invoke(tab);
+            flag = true;
             Close();
+        }
+
+        private void Settings_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!flag) 
+            {  
+                MessageBox.Show("Таймер не создан!\n" +
+                    "это приведет к закрытию программы \n" +
+                    "или востоновлению ренее создонного таймера.", "Внимание!");
+            }
         }
     }
 }

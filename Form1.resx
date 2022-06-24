@@ -139,7 +139,7 @@
     <value>1</value>
   </data>
   <data name="bStart.Text" xml:space="preserve">
-    <value>Старт</value>
+    <value>Start</value>
   </data>
   <data name="&gt;&gt;bStart.Name" xml:space="preserve">
     <value>bStart</value>
@@ -193,7 +193,7 @@
     <value>12, 113</value>
   </data>
   <data name="tBRound.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 15</value>
+    <value>201, 19</value>
   </data>
   <data name="tBRound.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -235,7 +235,7 @@
     <value>5</value>
   </data>
   <data name="btn_NewTim.Text" xml:space="preserve">
-    <value>Новый Таймер</value>
+    <value>New Timer</value>
   </data>
   <data name="&gt;&gt;btn_NewTim.Name" xml:space="preserve">
     <value>btn_NewTim</value>
@@ -268,7 +268,7 @@
     <value>6</value>
   </data>
   <data name="btn_RestartTimer.Text" xml:space="preserve">
-    <value>Рестарт Таймера</value>
+    <value>Restart Timer</value>
   </data>
   <data name="&gt;&gt;btn_RestartTimer.Name" xml:space="preserve">
     <value>btn_RestartTimer</value>
@@ -301,7 +301,7 @@
     <value>7</value>
   </data>
   <data name="btn_RestartInter.Text" xml:space="preserve">
-    <value>Рестарт Интервала</value>
+    <value>Restart Interval</value>
   </data>
   <data name="&gt;&gt;btn_RestartInter.Name" xml:space="preserve">
     <value>btn_RestartInter</value>
@@ -315,28 +315,34 @@
   <data name="&gt;&gt;btn_RestartInter.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 208</value>
+  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="checkBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt, style=Bold</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 216</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>button1</value>
+  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 24</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="checkBox1.Text" xml:space="preserve">
+    <value>sound off</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
+    <value>checkBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -349,7 +355,7 @@
     <value>None</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>400, 257</value>
+    <value>398, 249</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2024,7 +2030,7 @@
     <value>420, 300</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Пимидоный таймер</value>
+    <value>Пимидорный таймер</value>
   </data>
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>
