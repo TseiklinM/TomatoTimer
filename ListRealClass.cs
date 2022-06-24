@@ -57,7 +57,7 @@ namespace TomatoTimer
         {
             if (min == 0)
             {
-                if (sec == 3) 
+                if (sec == 3 && numActivInt!=(listIntervalTimer.Count-1)) 
                 { 
                     getMyMess?.Invoke(listIntervalTimer[numActivInt].Name+" завершён!!!"); 
                 }
